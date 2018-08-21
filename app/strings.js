@@ -14,9 +14,9 @@ stringsAnswers = {
     var prevChar = '';
     var dupeCount = 1;
     for(var i = 0; i< str.length; i++){
-      var char = str.substr(i,1);
-      if(prevChar !== char){
-        prevChar = char;
+      var currChar = str.substr(i,1);
+      if(prevChar !== currChar){
+        prevChar = currChar;
         dupeCount = 1;
       }
       else{
@@ -25,7 +25,7 @@ stringsAnswers = {
           continue;
         }
       }
-      returnedStr += char;
+      returnedStr += currChar;
     }
     return returnedStr;
   },

@@ -26,7 +26,7 @@ arraysAnswers = {
   sum: function sum(arr) {
     var sum = 0;
     arr.forEach(((item) => {
-      if(typeof item == "number"){
+      if(typeof item === "number"){
         sum += item;
       }
     }));
@@ -172,7 +172,7 @@ arraysAnswers = {
     var duplicatedNums = [];
     var map = {};
     arr.forEach((item) => {
-      if(map[item] == undefined){
+      if(map[item] === undefined){
         map[item] = 0;
       }
       else{
@@ -194,7 +194,7 @@ arraysAnswers = {
   square: function square(arr) {
     var newArr = [];
     arr.forEach((item) =>{
-      if(typeof item == "number"){
+      if(typeof item === "number"){
         newArr.push(item * item);
       }
     });
